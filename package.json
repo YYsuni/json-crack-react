@@ -1,0 +1,48 @@
+{
+  "name": "json-crack-react",
+  "version": "0.0.0",
+  "description": "Simple JSON crack graph react function component.",
+  "main": "src/JsonCrack.tsx",
+	"type": "module",
+  "scripts": {
+    "prepare": "husky install",
+    "prebuild": "npm run clean",
+    "build": "rollup -c",
+    "clean": "rm -rf dist",
+    "format": "prettier --write .",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.2",
+    "react": "^18.2.0",
+    "rollup": "^3.9.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.34.1"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "keywords": [
+    "json",
+    "crack",
+    "graph",
+    "flow",
+    "react"
+  ],
+  "author": "Suni",
+  "license": "MIT",
+  "lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	},
+	"sideEffects": false
+}
