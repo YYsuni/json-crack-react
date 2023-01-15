@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Simple JSON crack graph react function component.",
   "main": "src/JsonCrack.tsx",
-	"type": "module",
+  "type": "module",
   "scripts": {
     "prepare": "husky install",
     "prebuild": "npm run clean",
@@ -42,7 +42,10 @@
   "author": "Suni",
   "license": "MIT",
   "lint-staged": {
-		"**/*": "prettier --write --ignore-unknown"
-	},
-	"sideEffects": false
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "reaflow": "^5.1.2"
+  }
 }
